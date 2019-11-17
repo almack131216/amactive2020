@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import { Component } from "react";
-
 class imgBanner extends React.Component<any, any> {
   constructor(props: any) {
     super(props);

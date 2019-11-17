@@ -1,19 +1,27 @@
 import * as React from "react";
-import HeaderImg from "../../assets/img/maga-cap.jpg";
 import "./Header.css";
 
-const header = () => {
-  return (
-    <header id="top" className="header">
-      <div className="text-vertical-center">
-        <div className="main-img">
-          <a href="#about">
-            <img src={HeaderImg} alt="amactive 2020" />
-          </a>
+class header extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <header id="top" className="header">
+        <div className="text-vertical-center">
+          <div className="main-img">
+            <a href="#about">
+              <img
+                src={this.props.data.img.src}
+                alt={this.props.data.img.alt}
+              />
+            </a>
+          </div>
         </div>
-      </div>
-    </header>
-  );
-};
+      </header>
+    );
+  }
+}
 
 export default header;

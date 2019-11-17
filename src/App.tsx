@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Component } from "react";
 import "./App.css";
 import "./assets/css/main.css";
 import "./assets/css/stylish-portfolio.css";
@@ -13,31 +12,35 @@ import TitleSection from "./components/TitleSection/TitleSection";
 import Clients from "./components/Clients/Clients";
 import Contact from "./components/Contact/Contact";
 // import Footer from "./components/Footer/Footer";
+import SiteData from "./components/data.json";
 
 class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     console.log("[App.js] constructor");
+
+    this.state = {
+      data: SiteData
+    };
+  }
+
+  componentDidMount() {
+    console.log("[App.js] componentDidMount");
+    //"http://www.amactive.net/amactive2020/data.json"
   }
 
   render() {
+    console.log("[App.js] render... ");
+
     return (
       <div className="App">
         <Navigation />
-        <Header />
-        <About />
-        <TitleSection
-          title="About Me"
-          body="I'm a UI-UX designer-developer with more than 10 years experience. My broad experience will be useful to any employer, so get in touch if you have an empty chair, and a bad-ass-fast desktop machine to work from."
-        />
+        <Header data={this.state.data.header} />
+        <TitleSection data={this.state.data.about} />
         <Services class="bg-primary" />
         <ImgBanner title="Section Title" />
         <Portfolio />
-        <TitleSection
-          class="bg-secondary"
-          title="Clients"
-          subtitle="blah blah"
-        />
+        <TitleSection data={this.state.data.clients} />
         <Clients />
         <Contact />
         {/* <Footer /> */}
