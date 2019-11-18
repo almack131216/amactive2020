@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./Portfolio.css";
+import { Example } from "./ReactGestureGallery";
 
 class portfolio extends React.Component<any, any> {
   constructor(props: any) {
@@ -7,6 +8,7 @@ class portfolio extends React.Component<any, any> {
   }
 
   render() {
+    // this.props.data.items[0].imr.src
     const myClass = this.props.data.class ? this.props.data.class : "";
     const myPortfolio = this.props.data.items.map(
       (
@@ -54,6 +56,9 @@ class portfolio extends React.Component<any, any> {
     return (
       <section id={this.props.data.id} className={"title " + myClass}>
         <h2>{this.props.data.title}</h2>
+
+        {<Example />}
+
         <div className="gallery portfolio">{myPortfolio}</div>
       </section>
     );
