@@ -39,7 +39,7 @@ class App extends React.Component<any, any> {
         <TitleSection data={this.state.data.about} />
         <Services data={this.state.data.services} />
         <ImgBanner title='"My best design is my next"' />
-        <Portfolio />
+        <Portfolio data={this.state.data.portfolio} />
         <TitleSection data={this.state.data.clients} />
         <Clients />
         <Contact />

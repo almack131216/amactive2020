@@ -22,7 +22,7 @@
     "id": "services",
     "class": "bg-primary",
     "title": "Skills",
-    "skills": [
+    "items": [
       {
         "title": "Development",
         "icon": "code",
@@ -43,7 +43,67 @@
         "icon": "terminal",
         "text": "VS Code, NPM, Grunt, Gulp, GIT, Bitbucket, JIRA, TFS (Windows)"
       }
-    ],
-    "skillx": [1, 2, 3]
+    ]
+  },
+  "portfolio": {
+    "id": "portfolio",
+    "class": "",
+    "title": "Portfolio",
+    "items": [
+      {
+        "title": "EnergieDirect.nl",
+        "url": "https://www.energiedirect.nl/",
+        "text": "Angular FE + SASS CSS | 2018",
+        "img": {
+          "src": "/assets/img/portfolio/energie-direct-nl.jpg",
+          "alt": "Energie Direct"
+        }
+      },
+      {
+        "title": "ClassicAndSportscar.ltd.uk",
+        "url": "https://classicandsportscar.ltd.uk/_wp190503/",
+        "text": "Wordpress, bespoke theme | Dec 19",
+        "img": {
+          "src": "/assets/img/portfolio/classic-and-sportscar.jpg",
+          "alt": "Classic and Sportscar Centre"
+        }
+      },
+      {
+        "title": "MaltonCoachworks.co.uk",
+        "url": "http://www.maltoncoachworks.co.uk",
+        "text": "Angular FE + Bespoke PHP MySql CMS | 2017",
+        "img": {
+          "src": "/assets/img/portfolio/malton-coachworks.jpg",
+          "alt": "Malton Coachworks"
+        }
+      },
+      {
+        "title": "BestFoodPrague.com",
+        "url": "http://www.bestfoodprague.com",
+        "text": "Bespoke PHP MySql CMS | 2016",
+        "img": {
+          "src": "/assets/img/portfolio/best-food-prague.jpg",
+          "alt": "Best Food Prague"
+        }
+      },
+      {
+        "title": "Zettabox.com",
+        "url": "#",
+        "text": "Lead designer & FE developer | 2015",
+        "img": {
+          "src": "/assets/img/portfolio/logo-zettabox.jpg",
+          "alt": "Zettabox"
+        }
+      },
+      {
+        "title": "PSautoart.com",
+        "url": "https://classicandsportscar.ltd.uk/_wp190503/",
+        "text": "Bespoke PHP MySql CMS | 2010",
+        "img": {
+          "src": "/assets/img/portfolio/logo-paul-stephens-badge.jpg",
+          "alt": "PS Autoart"
+        }
+      }
+    ]
   }
 }
