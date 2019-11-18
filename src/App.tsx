@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./App.css";
 import "./assets/css/main.css";
-import "./assets/css/stylish-portfolio.css";
+// import "./assets/css/stylish-portfolio.css";
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
@@ -37,8 +37,8 @@ class App extends React.Component<any, any> {
         <Navigation />
         <Header data={this.state.data.header} />
         <TitleSection data={this.state.data.about} />
-        <Services class="bg-primary" />
-        <ImgBanner title="Section Title" />
+        <Services data={this.state.data.services} />
+        <ImgBanner title='"My best design is my next"' />
         <Portfolio />
         <TitleSection data={this.state.data.clients} />
         <Clients />

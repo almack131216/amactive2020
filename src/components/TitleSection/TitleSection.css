@@ -1,0 +1,44 @@
+section.title {
+  padding: 30px;
+  padding-top: 0;
+  border: 1px solid red;
+}
+
+section.title h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 30px auto;
+  padding-bottom: 10px;
+  position: relative;
+  color: black;
+}
+
+section.title h2:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid #000;
+}
+
+section.title h3 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+  color: #333;
+}
+
+section.title div.body {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #333;
+  font-weight: 300;
+}
