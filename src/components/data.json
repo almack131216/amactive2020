@@ -88,21 +88,97 @@
       },
       {
         "title": "Zettabox.com",
-        "url": "#",
+        "url": "",
         "text": "Lead designer & FE developer | 2015",
         "img": {
           "src": "/assets/img/portfolio/logo-zettabox.jpg",
           "alt": "Zettabox"
-        }
+        },
+        "slides": [
+          {
+            "src": "/assets/img/portfolio/zettabox/pricing-page.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/file-manager.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/file-manager_selected.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/A4-or-A5_general.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/business-cards.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/popup-banners.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/t-shirts.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/recruiting.jpg",
+            "alt": "Zettabox"
+          }
+        ]
       },
       {
         "title": "PSautoart.com",
-        "url": "https://classicandsportscar.ltd.uk/_wp190503/",
+        "url": "",
         "text": "Bespoke PHP MySql CMS | 2010",
         "img": {
           "src": "/assets/img/portfolio/logo-paul-stephens-badge.jpg",
           "alt": "PS Autoart"
-        }
+        },
+        "slides": [
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_00_homepage-0.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_00_homepage-1.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_00_homepage-2.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-0.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-1.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-2.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-3.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-4.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_02_press-0.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_02_press-1.jpg",
+            "alt": "PS Autoart"
+          }
+        ]
       }
     ]
   }

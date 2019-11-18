@@ -1,45 +1,80 @@
+// https://github.com/frontend-collective/react-image-lightbox
 import * as React from "react";
-import { Gallery, GalleryImage } from "react-gesture-gallery";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 
-export function Example(getImages: {}) {
-  const [index, setIndex] = React.useState(0);
-  console.log("[Example] " + getImages);
+class LightboxExample extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    console.log("[ReactGestureGallery] props: ", props);
 
-  const images = [
-    {
-      src:
-        "https://images.unsplash.com/photo-1557958114-3d2440207108?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-    },
-    {
-      src:
-        "https://images.unsplash.com/photo-1557939403-1760a0e47505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1931&q=80"
-    },
-    {
-      src:
-        "https://images.unsplash.com/photo-1558029062-a37889b87526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"
-    },
-    {
-      src:
-        "https://images.unsplash.com/photo-1558088458-b65180740294?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1579&q=80"
-    },
-    {
-      src:
-        "https://images.unsplash.com/photo-1558039719-79cb7b60d279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-    }
-  ];
+    this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+  }
 
-  return (
-    <div style={{ background: "black", width: "100%", height: "90vh" }}>
-      <Gallery
-        index={index}
-        onRequestChange={i => {
-          setIndex(i);
-        }}
-      >
-        {images.map(img => (
-          <GalleryImage objectFit="contain" key={img.src} src={img.src} />
-        ))}
-      </Gallery>
-    </div>
-  );
+  render() {
+    const { photoIndex, isOpen } = this.state;
+
+    // const images = [
+    //   "//placekitten.com/1500/500",
+    //   "//placekitten.com/4000/3000",
+    //   "//placekitten.com/800/1200",
+    //   "//placekitten.com/1500/1500"
+    // ];
+
+    console.log("src: " + this.props.images[0].src);
+
+    // const images = [
+    //   this.props.images[0].img.src,
+    //   this.props.images[1].img.src,
+    //   this.props.images[2].img.src
+    // ];
+
+    const images = this.props.images.map(
+      (image: { src: string }, index: number) => {
+        console.log("[ReactGestureGallery] img: " + image.src);
+        return image.src;
+      }
+    );
+
+    const atag =
+      this.props.click && this.props.custBtn ? (
+        <a onClick={() => this.setState({ isOpen: true })}>
+          {this.props.custBtn}
+        </a>
+      ) : (
+        <button type="button" onClick={() => this.setState({ isOpen: true })}>
+          Open Lightbox
+        </button>
+      );
+
+    return (
+      <div>
+        {atag}
+
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length
+              })
+            }
+          />
+        )}
+      </div>
+    );
+  }
 }
+
+export default LightboxExample;
