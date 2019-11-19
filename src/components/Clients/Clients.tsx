@@ -41,8 +41,10 @@ class clients extends React.Component<any, any> {
     );
 
     return (
-      <section id={this.props.data.id} className={"content " + myClass}>
-        <div className="css-grid clients">{myClients}</div>
+      <section id={this.props.data.id} className={myClass}>
+        <div className="section-inner">
+          <div className="css-grid clients">{myClients}</div>
+        </div>
       </section>
     );
   }

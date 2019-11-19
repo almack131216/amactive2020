@@ -22,26 +22,30 @@ class services extends React.Component<any, any> {
       (item: { title: string; icon: string; text: string }, index: number) => {
         return (
           <div className="item" key={index}>
-            <span className="fa-stack fa-4x">
-              <FontAwesomeIcon icon={faCircle} className="fa-stack-2x" />
-              <FontAwesomeIcon
-                icon={item.icon as IconName}
-                className="fa-stack-1x text-primary"
-              />
-            </span>
-            <h4>
-              <strong>{item.title}</strong>
-            </h4>
-            <p>{item.text}</p>
-            {/* <!--<a href="#" className="btn btn-light">Learn More</a>--> */}
+            <div className="icon-area">
+              <span className="fa-stack fa-4x___">
+                <FontAwesomeIcon icon={faCircle} className="fa-stack-2x" />
+                <FontAwesomeIcon
+                  icon={item.icon as IconName}
+                  className="fa-stack-1x text-primary"
+                />
+              </span>
+            </div>
+            <div className="text-area">
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+              {/* <!--<a href="#" className="btn btn-light">Learn More</a>--> */}
+            </div>
           </div>
         );
       }
     );
 
     return (
-      <section id={this.props.data.id} className={"content " + myClass}>
-        <div className="css-grid services">{mySkills}</div>
+      <section id={this.props.data.id} className={myClass}>
+        <div className="section-inner">
+          <div className="css-grid services">{mySkills}</div>
+        </div>
       </section>
     );
   }

@@ -13,13 +13,13 @@ const contact = () => {
             <h4>
               <strong>Alex Mackenzie</strong>
             </h4>
-            <ul className="list-unstyled">
-              <li>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <a href="mailto:alex@amactive.net">alex@amactive.net</a>
-              </li>
+            {/* <ul className="list-unstyled">
+              <li> */}
+            <FontAwesomeIcon icon={faEnvelope} />
+            <a href="mailto:alex@amactive.net">alex@amactive.net</a>
+            {/* </li>
             </ul>
-            <br />
+            <br /> */}
             {/* <!--<ul className="list-inline">
                     <li>
                         <a href="#"><i className="fa fa-facebook fa-fw fa-3x"></i></a>

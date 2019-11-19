@@ -50,7 +50,7 @@ class App extends React.Component<any, any> {
         <Portfolio data={this.state.data.portfolio} />
         <TitleSection
           title={this.state.data.clients.title}
-          bodyStrong={this.state.data.clients.bodyStrong}
+          body={this.state.data.clients.body}
           class="bg-secondary"
         />
         <Clients data={this.state.data.clients} />

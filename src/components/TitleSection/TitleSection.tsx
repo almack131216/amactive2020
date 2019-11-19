@@ -20,9 +20,11 @@ class titleSection extends React.Component<any, any> {
 
     return (
       <section id={myId} className={"title " + myClass}>
-        <h2>{this.props.title}</h2>
-        {mySubtitle}
-        {myBody}
+        <div className="section-inner">
+          <h2>{this.props.title}</h2>
+          {mySubtitle}
+          {myBody}
+        </div>
       </section>
     );
   }
