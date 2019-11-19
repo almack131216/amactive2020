@@ -3,7 +3,7 @@ import "./App.css";
 import "./assets/css/main.css";
 // import "./assets/css/stylish-portfolio.css";
 import Navigation from "./components/Navigation/Navigation";
-import Header from "./components/Header/Header";
+import MainImage from "./components/MainImage/MainImage";
 import Services from "./components/Services/Services";
 import ImgBanner from "./components/ImgBanner/ImgBanner";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -34,8 +34,9 @@ class App extends React.Component<any, any> {
     return (
       <div className="App">
         <Navigation />
-        <Header data={this.state.data.header} />
+        <MainImage data={this.state.data.header} />
         <TitleSection
+          id="about"
           title={this.state.data.about.title}
           body={this.state.data.about.body}
         />

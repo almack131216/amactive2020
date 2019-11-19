@@ -1,7 +1,7 @@
 import * as React from "react";
-import "./Header.css";
+import "./MainImage.css";
 
-class header extends React.Component<any, any> {
+class mainImage extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
   }
@@ -24,4 +24,4 @@ class header extends React.Component<any, any> {
   }
 }
 
-export default header;
+export default mainImage;
