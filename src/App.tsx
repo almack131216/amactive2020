@@ -41,7 +41,7 @@ class App extends React.Component<any, any> {
         <ImgBanner title='"My best design is my next"' />
         <Portfolio data={this.state.data.portfolio} />
         <TitleSection data={this.state.data.clients} />
-        <Clients />
+        <Clients data={this.state.data.clients} />
         <Contact />
         {/* <Footer /> */}
       </div>

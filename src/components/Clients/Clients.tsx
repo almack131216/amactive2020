@@ -1,85 +1,52 @@
 import * as React from "react";
+import ImgLoading from "../../assets/img/loading.gif";
+import "./Clients.css";
 
-const clients = () => {
-  return (
-    <section id="clients" className="section-wrap">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-10 col-lg-offset-1 text-center">
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-bp.jpg"
-                alt="Zettabox"
-              />
-            </div>
+class clients extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+  }
 
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-johnson-and-johnson.jpg"
-                alt="Zettabox"
-              />
-            </div>
+  render() {
+    // this.props.data.items[0].imr.src
+    const myClass = this.props.data.class ? this.props.data.class : "";
+    const myClients = this.props.data.items.map(
+      (
+        item: {
+          title: string;
+          img: { src: string | undefined; alt: string | undefined };
+          text: string;
+          url: string;
+        },
+        index: number
+      ) => {
+        const itemClass = "clients__item clients__item--" + (index + 1);
 
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-depuy.jpg"
-                alt="Zettabox"
-              />
-            </div>
+        const itemImg = item.img.src ? (
+          <img
+            className="clients__img top img-responsive"
+            src={item.img.src}
+            alt={item.img.alt}
+          />
+        ) : (
+          <img src={ImgLoading} />
+        );
 
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-smith-and-nephew.jpg"
-                alt="Zettabox"
-              />
-            </div>
-
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-zoopla.jpg"
-                alt="Zettabox"
-              />
-            </div>
-
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-credit-info.jpg"
-                alt="Zettabox"
-              />
-            </div>
-
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-interoute.jpg"
-                alt="Zettabox"
-              />
-            </div>
-
-            <div className="col-xs-6 col-sm-3 grid-logo">
-              <img
-                className="img-responsive"
-                src="img/clients/logo-bonmarche.jpg"
-                alt="Zettabox"
-              />
-            </div>
-
-            {/* <!-- /.row (nested) --> */}
-            {/* <!--<a href="#" className="btn btn-dark">View More Items</a>--> */}
+        return (
+          <div className={itemClass} key={index}>
+            {itemImg}
           </div>
-          {/* <!-- /.col-lg-10 --> */}
-        </div>
-        {/* <!-- /.row --> */}
-      </div>
-      {/* <!-- /.container --> */}
-    </section>
-  );
-};
+        );
+      }
+    );
+
+    return (
+      <section id={this.props.data.id} className={"title " + myClass}>
+        {/* <h2>{this.props.data.title}</h2> */}
+        <div className="clients">{myClients}</div>
+      </section>
+    );
+  }
+}
 
 export default clients;
