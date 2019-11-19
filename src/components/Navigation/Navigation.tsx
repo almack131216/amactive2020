@@ -6,7 +6,7 @@ const navigation = () => {
       <a id="menu-toggle" href="#" className="btn btn-lg toggle">
         <i className="fa fa-bars"></i>
       </a>
-      <nav id="sidebar-wrapper">
+      <nav id="sidebar-wrapper" className="display-none">
         <ul className="sidebar-nav">
           <a
             id="menu-close"

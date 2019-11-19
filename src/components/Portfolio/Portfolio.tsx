@@ -70,7 +70,9 @@ class portfolio extends React.Component<any, any> {
 
     return (
       <section id={this.props.data.id} className={myClass}>
-        <div className="css-grid portfolio">{myPortfolio}</div>
+        <div className="section-inner">
+          <div className="css-grid portfolio">{myPortfolio}</div>
+        </div>
       </section>
     );
   }

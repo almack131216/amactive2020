@@ -51,7 +51,7 @@ class LightboxExample extends React.Component<any, any> {
       );
 
     return (
-      <div>
+      <React.Fragment>
         {atag}
 
         {isOpen && (
@@ -72,7 +72,7 @@ class LightboxExample extends React.Component<any, any> {
             }
           />
         )}
-      </div>
+      </React.Fragment>
     );
   }
 }

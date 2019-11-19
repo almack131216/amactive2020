@@ -1,6 +1,5 @@
 /* img-box */
 /* img hover */
-/* line 3, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .img-text-behind {
   position: relative;
   width: 100%;
@@ -12,21 +11,18 @@
   margin-bottom: 30px;
 }
 
-/* line 13, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .img-text-behind:before {
   content: "";
   display: block;
   padding-top: 65%;
 }
 
-/* line 18, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .img-text-behind li {
   padding: 0;
   width: 100%;
   list-style: none;
 }
 
-/* line 23, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .img-text-behind li.li-text {
   position: absolute;
   top: 0px;
@@ -34,28 +30,24 @@
   padding: 15px;
 }
 
-/* line 29, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .img-text-behind p,
 .img-text-behind h2 {
   color: #fff;
   padding: 10px;
 }
 
-/* line 33, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .img-text-behind p {
   font-size: 12px;
   line-height: 18px;
   margin: 0;
 }
 
-/* line 38, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .img-text-behind h2 {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
 }
 
-/* line 43, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 .effect img {
   position: absolute;
   left: 0;
@@ -78,7 +70,6 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 10vw);
   grid-gap: 15px;
-  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -89,30 +80,46 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
   border: 1px solid #eee;
 }
 
-.css-grid.portfolio .css-grid__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 4;
+@media (min-width: 768px) {
+  .css-grid.portfolio .css-grid__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .css-grid.portfolio .css-grid__item--4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .css-grid.portfolio .css-grid__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .css-grid.portfolio .css-grid__item--6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 }
 
-.css-grid.portfolio .css-grid__item--4 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 4;
+@media (min-width: 600px) and (max-width: 767px) {
+  .css-grid.portfolio {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 20vw);
+  }
 }
 
-.css-grid.portfolio .css-grid__item--5 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
-}
-
-.css-grid.portfolio .css-grid__item--6 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 5;
+@media (max-width: 599px) {
+  .css-grid.portfolio {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 30vw);
+  }
 }

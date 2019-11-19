@@ -1,7 +1,9 @@
 import * as React from "react";
 import "./App.css";
-import "./assets/css/main.css";
-// import "./assets/css/stylish-portfolio.css";
+// import "./assets/css/main.css";
+import "./assets/css/Base.css";
+import "./assets/css/Colors.css";
+import "./assets/css/Typography.css";
 import Navigation from "./components/Navigation/Navigation";
 import MainImage from "./components/MainImage/MainImage";
 import Services from "./components/Services/Services";

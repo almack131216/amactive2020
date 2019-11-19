@@ -19,16 +19,16 @@
   border: 1px solid #eee;
 }
 
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .css-grid.clients {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 15vw);
+    grid-template-rows: repeat(2, 20vw);
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 599px) {
   .css-grid.clients {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 20vw);
+    grid-template-rows: repeat(4, 30vw);
   }
 }
