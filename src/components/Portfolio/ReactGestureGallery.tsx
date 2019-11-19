@@ -41,9 +41,9 @@ class LightboxExample extends React.Component<any, any> {
 
     const atag =
       this.props.click && this.props.custBtn ? (
-        <a onClick={() => this.setState({ isOpen: true })}>
+        <div onClick={() => this.setState({ isOpen: true })}>
           {this.props.custBtn}
-        </a>
+        </div>
       ) : (
         <button type="button" onClick={() => this.setState({ isOpen: true })}>
           Open Lightbox

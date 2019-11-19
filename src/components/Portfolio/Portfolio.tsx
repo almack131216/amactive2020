@@ -3,13 +3,8 @@ import "./Portfolio.css";
 import ImgGallery from "./ReactGestureGallery";
 
 class portfolio extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-  }
-
   render() {
     // this.props.data.items[0].imr.src
-    const custBtnHtml = <img src={this.props.data.items[0].img.src} />;
     const myClass = this.props.data.class ? this.props.data.class : "";
     const myPortfolio = this.props.data.items.map(
       (

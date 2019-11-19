@@ -3,10 +3,6 @@ import ImgLoading from "../../assets/loading.gif";
 import "./Clients.css";
 
 class clients extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-  }
-
   render() {
     // this.props.data.items[0].imr.src
     const myClass = this.props.data.class ? this.props.data.class : "";
@@ -29,7 +25,7 @@ class clients extends React.Component<any, any> {
             alt={item.img.alt}
           />
         ) : (
-          <img src={ImgLoading} />
+          <img src={ImgLoading} alt={item.img.alt} />
         );
 
         return (
