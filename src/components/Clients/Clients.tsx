@@ -41,8 +41,7 @@ class clients extends React.Component<any, any> {
     );
 
     return (
-      <section id={this.props.data.id} className={"title " + myClass}>
-        {/* <h2>{this.props.data.title}</h2> */}
+      <section id={this.props.data.id} className={"content " + myClass}>
         <div className="clients">{myClients}</div>
       </section>
     );

@@ -9,17 +9,18 @@ class titleSection extends React.Component<any, any> {
   }
 
   render() {
-    const myBody = this.props.data.body
-      ? parse('<div class="body">' + this.props.data.body + "</div")
+    const myBody = this.props.body
+      ? parse('<div class="body">' + this.props.body + "</div")
       : null;
-    const mySubtitle = this.props.data.subtitle
-      ? parse("<h3>" + this.props.data.subtitle + "</h3>")
+    const mySubtitle = this.props.bodyStrong
+      ? parse("<h3>" + this.props.bodyStrong + "</h3>")
       : null;
-    const myClass = this.props.data.class ? this.props.data.class : "";
+    const myClass = this.props.class ? this.props.class : "";
+    const myId = this.props.id ? this.props.id : "";
 
     return (
-      <section id={this.props.data.id} className={"title " + myClass}>
-        <h2>{this.props.data.title}</h2>
+      <section id={myId} className={"title " + myClass}>
+        <h2>{this.props.title}</h2>
         {mySubtitle}
         {myBody}
       </section>

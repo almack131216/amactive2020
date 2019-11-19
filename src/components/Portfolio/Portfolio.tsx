@@ -69,15 +69,7 @@ class portfolio extends React.Component<any, any> {
     );
 
     return (
-      <section id={this.props.data.id} className={"title " + myClass}>
-        <h2>{this.props.data.title}</h2>
-
-        {/* <ImgGallery
-          images={this.props.data.items}
-          click={true}
-          custBtn={custBtnHtml}
-        /> */}
-
+      <section id={this.props.data.id} className={"content " + myClass}>
         <div className="gallery portfolio">{myPortfolio}</div>
       </section>
     );

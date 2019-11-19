@@ -4,7 +4,6 @@ import "./assets/css/main.css";
 // import "./assets/css/stylish-portfolio.css";
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
-import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import ImgBanner from "./components/ImgBanner/ImgBanner";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -36,11 +35,23 @@ class App extends React.Component<any, any> {
       <div className="App">
         <Navigation />
         <Header data={this.state.data.header} />
-        <TitleSection data={this.state.data.about} />
+        <TitleSection
+          title={this.state.data.about.title}
+          body={this.state.data.about.body}
+        />
+        <TitleSection
+          title={this.state.data.services.title}
+          class="bg-primary"
+        />
         <Services data={this.state.data.services} />
         <ImgBanner title='"My best design is my next"' />
+        <TitleSection title={this.state.data.portfolio.title} />
         <Portfolio data={this.state.data.portfolio} />
-        <TitleSection data={this.state.data.clients} />
+        <TitleSection
+          title={this.state.data.clients.title}
+          bodyStrong={this.state.data.clients.bodyStrong}
+          class="bg-secondary"
+        />
         <Clients data={this.state.data.clients} />
         <Contact />
         {/* <Footer /> */}
