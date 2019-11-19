@@ -1,12 +1,4 @@
-section {
-  padding: 30px;
-}
-
-section .section-inner {
-  display: inline-block;
-  max-width: 900px;
-  margin: 0 auto;
-}
+/* TitleSection.css */
 
 section.title {
   border: 1px solid red;
@@ -17,13 +9,13 @@ section.title h2 {
   margin: 0 auto;
   padding-bottom: 15px;
   position: relative;
-  color: black;
 }
 
 section.title h2:before {
   content: "";
   position: absolute;
   width: 50%;
+  max-width: 100px;
   height: 1px;
   bottom: 0;
   left: 25%;
@@ -34,11 +26,9 @@ section.title h3 {
   margin: 30px auto 0 auto;
   display: inline-block;
   position: relative;
-  color: #000;
 }
 
 section.title div.body {
-  color: #333;
   margin-top: 30px;
 }
 
@@ -47,9 +37,10 @@ section.title.bg-secondary .body {
 }
 
 section.title.bg-primary h2 {
-  color: white;
+  /* color: white; */
 }
 
-section.title.bg-primary h2:before {
+section.title.bg-primary h2:before,
+section.title.bg-fourth h2:before {
   border-color: white;
 }
