@@ -12,7 +12,7 @@ import TitleSection from "./components/TitleSection/TitleSection";
 import Clients from "./components/Clients/Clients";
 import Contact from "./components/Contact/Contact";
 // import Footer from "./components/Footer/Footer";
-import SiteData from "./components/data.json";
+import SiteData from "./assets/api/data.json";
 
 class App extends React.Component<any, any> {
   constructor(props: any) {
