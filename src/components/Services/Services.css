@@ -1,0 +1,48 @@
+/* Clients.css */
+/* grid */
+/*
+  https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
+  */
+.css-grid.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(3, 10vw); */
+  grid-gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.css-grid.services .item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+/* .css-grid.services .item__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  
+  .css-grid.services .item__item--4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  
+  .css-grid.services .item__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  
+  .css-grid.services .item__item--6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  } */

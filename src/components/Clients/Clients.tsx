@@ -20,11 +20,11 @@ class clients extends React.Component<any, any> {
         },
         index: number
       ) => {
-        const itemClass = "clients__item clients__item--" + (index + 1);
+        const itemClass = "item__item item__item--" + (index + 1);
 
         const itemImg = item.img.src ? (
           <img
-            className="clients__img top img-responsive"
+            className="item__img top img-responsive"
             src={item.img.src}
             alt={item.img.alt}
           />
@@ -42,7 +42,7 @@ class clients extends React.Component<any, any> {
 
     return (
       <section id={this.props.data.id} className={"content " + myClass}>
-        <div className="clients">{myClients}</div>
+        <div className="css-grid clients">{myClients}</div>
       </section>
     );
   }

@@ -73,7 +73,7 @@
 /*
 https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
 */
-.gallery {
+.css-grid.portfolio {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 10vw);
@@ -82,35 +82,35 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
   margin: 0 auto;
 }
 
-.gallery__img {
+.css-grid.portfolio .css-grid__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 1px solid #eee;
 }
 
-.gallery__item--1 {
+.css-grid.portfolio .css-grid__item--1 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 4;
 }
 
-.gallery__item--4 {
+.css-grid.portfolio .css-grid__item--4 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
-.gallery__item--5 {
+.css-grid.portfolio .css-grid__item--5 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
 }
 
-.gallery__item--6 {
+.css-grid.portfolio .css-grid__item--6 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 4;

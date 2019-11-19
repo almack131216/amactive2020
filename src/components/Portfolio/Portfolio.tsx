@@ -22,10 +22,10 @@ class portfolio extends React.Component<any, any> {
         },
         index: number
       ) => {
-        const itemClass = "gallery__item gallery__item--" + (index + 1);
+        const itemClass = "css-grid__item css-grid__item--" + (index + 1);
         const itemImgElement = (
           <img
-            className="gallery__img top img-responsive"
+            className="css-grid__img top img-responsive"
             src={item.img.src}
             alt={item.img.alt}
           />
@@ -70,7 +70,7 @@ class portfolio extends React.Component<any, any> {
 
     return (
       <section id={this.props.data.id} className={"content " + myClass}>
-        <div className="gallery portfolio">{myPortfolio}</div>
+        <div className="css-grid portfolio">{myPortfolio}</div>
       </section>
     );
   }
