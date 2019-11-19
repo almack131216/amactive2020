@@ -1,31 +1,27 @@
 /* MainImage.css */
 /*
   */
-.css-grid.clients {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 10vw);
-  grid-gap: 15px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.css-grid.clients .item__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid #eee;
-}
-
 .main-img {
-  display: inline-block;
-  background: white;
-  width: 90%;
-  max-width: 600px;
+  width: 75%;
   height: auto;
+  /* min-height: 60vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto;
 }
 
 div.main-img img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 599px) {
+  .main-img {
+    width: 100%;
+  }
+  div.main-img img {
+  }
 }
