@@ -2,7 +2,7 @@ import * as React from "react";
 import "./assets/css/Base.css";
 import "./assets/css/Colors.css";
 import "./assets/css/Typography.css";
-import Navigation from "./components/Navigation/Navigation";
+// import Navigation from "./components/Navigation/Navigation";
 import MainImage from "./components/MainImage/MainImage";
 import Services from "./components/Services/Services";
 import ImgBanner from "./components/ImgBanner/ImgBanner";
@@ -12,6 +12,9 @@ import Clients from "./components/Clients/Clients";
 import Contact from "./components/Contact/Contact";
 // import Footer from "./components/Footer/Footer";
 import SiteData from "./assets/api/data.json";
+import Toolbar from "./components/Toolbar/Toolbar";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
 
 class App extends React.Component<any, any> {
   constructor(props: any) {
@@ -20,7 +23,8 @@ class App extends React.Component<any, any> {
     console.log("[App.js] constructor");
 
     this.state = {
-      data: SiteData
+      data: SiteData,
+      sideDrawerOpen: false
     };
   }
 
@@ -29,37 +33,58 @@ class App extends React.Component<any, any> {
     //"http://www.amactive.net/amactive2020/data.json"
   }
 
+  drawerToggleClickHandler = () => {
+    this.setState((prevState: { sideDrawerOpen: any }) => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  };
+
   render() {
     console.log("[App.js] render... ");
 
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
+
     return (
       <div className="App">
-        <Navigation />
-        <MainImage data={this.state.data.header} />
-        <TitleSection
-          id="about"
-          title={this.state.data.about.title}
-          body={this.state.data.about.body}
-        />
-        <TitleSection
-          title={this.state.data.services.title}
-          class="bg-primary"
-        />
-        <Services data={this.state.data.services} />
-        <ImgBanner
-          id={this.state.data.imgBanner.id}
-          title={this.state.data.imgBanner.title}
-          subtitle={this.state.data.imgBanner.subtitle}
-          background={this.state.data.imgBanner.background}
-        />
-        <TitleSection title={this.state.data.portfolio.title} />
-        <Portfolio data={this.state.data.portfolio} />
-        <TitleSection
-          title={this.state.data.clients.title}
-          body={this.state.data.clients.body}
-          class="bg-secondary"
-        />
-        <Clients data={this.state.data.clients} />
+        {/* <Navigation /> */}
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen} />
+        {backdrop}
+        <main style={{ marginTop: "64px" }}>
+          <MainImage data={this.state.data.header} />
+          <TitleSection
+            id="about"
+            title={this.state.data.about.title}
+            body={this.state.data.about.body}
+          />
+          <TitleSection
+            title={this.state.data.services.title}
+            class="bg-primary"
+          />
+          <Services data={this.state.data.services} />
+          <ImgBanner
+            id={this.state.data.imgBanner.id}
+            title={this.state.data.imgBanner.title}
+            subtitle={this.state.data.imgBanner.subtitle}
+            background={this.state.data.imgBanner.background}
+          />
+          <TitleSection title={this.state.data.portfolio.title} />
+          <Portfolio data={this.state.data.portfolio} />
+          <TitleSection
+            title={this.state.data.clients.title}
+            body={this.state.data.clients.body}
+            class="bg-secondary"
+          />
+          <Clients data={this.state.data.clients} />
+        </main>
         <Contact />
         {/* <Footer /> */}
       </div>
