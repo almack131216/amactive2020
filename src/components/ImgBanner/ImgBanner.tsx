@@ -8,7 +8,8 @@ class imgBanner extends React.Component<any, any> {
         id={this.props.id}
         className="callout"
         style={{
-          backgroundImage: `url(${this.props.background.url})`,
+          backgroundImage:
+            this.props.background.url && `url(${this.props.background.url})`,
           backgroundPosition: this.props.background.position
             ? this.props.background.position
             : "left top",
@@ -18,11 +19,13 @@ class imgBanner extends React.Component<any, any> {
           backgroundAttachment: this.props.background.attachment
             ? this.props.background.attachment
             : "scroll",
+          backgroundSize: this.props.background.size
+            ? this.props.background.size
+            : "cover",
           backgroundColor: this.props.background.color
             ? this.props.background.color
             : "#333"
         }}
-        //  background: url(../../assets/pininfarina.jpg) no-repeat left top scroll;
       >
         <div className="text-vertical-center">
           <h1>

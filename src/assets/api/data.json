@@ -22,7 +22,8 @@
       "position": "left top",
       "color": "#333",
       "attachment": "scroll",
-      "repeat": "no-repeat"
+      "repeat": "no-repeat",
+      "size": "cover"
     }
   },
   "clients": {

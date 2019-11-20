@@ -7,10 +7,10 @@
   color: #fff;
   background-color: #333;
   /* background: url(../../assets/pininfarina.jpg) no-repeat left top scroll; */
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
 }
 
 .text-vertical-center {
