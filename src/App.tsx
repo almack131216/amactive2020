@@ -47,7 +47,11 @@ class App extends React.Component<any, any> {
           class="bg-primary"
         />
         <Services data={this.state.data.services} />
-        <ImgBanner title='"My best design is my next"' />
+        <ImgBanner
+          id={this.state.data.imgBanner.id}
+          title={this.state.data.imgBanner.title}
+          subtitle={this.state.data.imgBanner.subtitle}
+        />
         <TitleSection title={this.state.data.portfolio.title} />
         <Portfolio data={this.state.data.portfolio} />
         <TitleSection
