@@ -1,0 +1,59 @@
+/* Colors.css */
+
+.bg-primary {
+  background-color: #c0392b;
+}
+
+.bg-secondary {
+  background-color: #ffaf00;
+}
+
+.bg-third {
+  background-color: #0091cf;
+}
+
+.bg-fourth {
+  background-color: #01395a;
+}
+
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary p,
+.bg-fourth h2,
+.bg-fourth h3,
+.bg-fourth h4,
+.bg-fourth p {
+  color: white;
+}
+
+.bg-fourth a {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-secondary p,
+.bg-secondary ul li,
+.bg-secondary ul li,
+.bg-third p,
+.bg-third ul li,
+.bg-third ul li {
+  color: black;
+}
+
+.bg-primary,
+.bg-secondary a,
+.bg-third a {
+  color: white;
+}
+
+.bg-third {
+  background-color: #0091cf;
+}
+
+.text-primary {
+  color: #c0392b;
+}

@@ -1,0 +1,33 @@
+/* Base.css */
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+/* <section> */
+section {
+  padding: 30px;
+}
+
+section.title:not(#about) {
+  padding-top: 60px;
+}
+
+section .section-inner {
+  display: inline-block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* offsets */
+.pad-icon-left {
+  margin-left: 10px;
+}

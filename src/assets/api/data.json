@@ -1,0 +1,264 @@
+{
+  "date": "191116",
+  "tmpPath": "./assets/img/",
+  "header": {
+    "img": {
+      "src": "/assets/img/maga-cap.jpg",
+      "alt": "Make Amactive Great Again!"
+    }
+  },
+  "about": {
+    "id": "about",
+    "title": "About Me",
+    "body": "I'm a UI-UX designer-developer with more than 10 years experience. My broad experience will be useful to any employer, so <a href=\"#contact\">get in touch</a> if you have an empty chair, and a bad-ass-fast desktop machine to work from."
+  },
+  "imgBanner": {
+    "id": "imgBanner",
+    "title": "\"My best design is my next\"",
+    "subtitle": "Sergio Pininfarina"
+  },
+  "clients": {
+    "id": "clients",
+    "class": "bg-secondary",
+    "title": "Clients",
+    "body": "Throughout my career, I have been very fortunate to work on some exciting projects for clients large and small, all over the world",
+    "items": [
+      {
+        "title": "BP | British Peroleum",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-bp.jpg",
+          "alt": "BP | British Peroleum"
+        }
+      },
+      {
+        "title": "Johnson & Johnson",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-johnson-and-johnson.jpg",
+          "alt": "Johnson & Johnson"
+        }
+      },
+      {
+        "title": "DePuy | Johnson & Johnson",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-depuy.jpg",
+          "alt": "DePuy | Johnson & Johnson"
+        }
+      },
+      {
+        "title": "Smith & Nephew",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-smith-and-nephew.jpg",
+          "alt": "Smith & Nephew"
+        }
+      },
+      {
+        "title": "Zoopla | Smarter property search",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-zoopla.jpg",
+          "alt": "Zoopla | Smarter property search"
+        }
+      },
+      {
+        "title": "Credit Info",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-credit-info.jpg",
+          "alt": "Credit Info"
+        }
+      },
+      {
+        "title": "Interoute",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-interoute.jpg",
+          "alt": "Interoute"
+        }
+      },
+      {
+        "title": "Bonmarche",
+        "url": "",
+        "text": "",
+        "img": {
+          "src": "/assets/img/clients/logo-bonmarche.jpg",
+          "alt": "Bonmarche"
+        }
+      }
+    ]
+  },
+  "services": {
+    "id": "services",
+    "class": "bg-primary",
+    "title": "Skills",
+    "items": [
+      {
+        "title": "Development",
+        "icon": "code",
+        "text": "React, Angular, jQuery, Vanilla JS, AureliaJS, Bootstrap, PHP, MySQL, Wordpress"
+      },
+      {
+        "title": "HTML5 & CSS3",
+        "icon": "shapes",
+        "text": "Standards compliant HTML with SASS CSS3"
+      },
+      {
+        "title": "Design",
+        "icon": "pencil-alt",
+        "text": "Axure, Adobe Fireworks, Photoshop & Illustrator, Flash"
+      },
+      {
+        "title": "Environment",
+        "icon": "terminal",
+        "text": "VS Code, NPM, Grunt, Gulp, GIT, Bitbucket, JIRA, TFS (Windows)"
+      }
+    ]
+  },
+  "portfolio": {
+    "id": "portfolio",
+    "class": "",
+    "title": "Portfolio",
+    "items": [
+      {
+        "title": "EnergieDirect.nl",
+        "url": "https://www.energiedirect.nl/",
+        "text": "Angular FE + SASS CSS | 2018",
+        "img": {
+          "src": "/assets/img/portfolio/energie-direct-nl.jpg",
+          "alt": "Energie Direct"
+        }
+      },
+      {
+        "title": "ClassicAndSportscar.ltd.uk",
+        "url": "https://classicandsportscar.ltd.uk/_wp190503/",
+        "text": "Wordpress, bespoke theme | Dec 19",
+        "img": {
+          "src": "/assets/img/portfolio/classic-and-sportscar.jpg",
+          "alt": "Classic and Sportscar Centre"
+        }
+      },
+      {
+        "title": "MaltonCoachworks.co.uk",
+        "url": "http://www.maltoncoachworks.co.uk",
+        "text": "Angular FE + Bespoke PHP MySql CMS | 2017",
+        "img": {
+          "src": "/assets/img/portfolio/malton-coachworks.jpg",
+          "alt": "Malton Coachworks"
+        }
+      },
+      {
+        "title": "BestFoodPrague.com",
+        "url": "http://www.bestfoodprague.com",
+        "text": "Bespoke PHP MySql CMS | 2016",
+        "img": {
+          "src": "/assets/img/portfolio/best-food-prague.jpg",
+          "alt": "Best Food Prague"
+        }
+      },
+      {
+        "title": "Zettabox.com",
+        "url": "",
+        "text": "Lead designer & FE developer | 2015",
+        "img": {
+          "src": "/assets/img/portfolio/logo-zettabox.jpg",
+          "alt": "Zettabox"
+        },
+        "slides": [
+          {
+            "src": "/assets/img/portfolio/zettabox/pricing-page.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/file-manager.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/file-manager_selected.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/A4-or-A5_general.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/business-cards.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/popup-banners.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/t-shirts.jpg",
+            "alt": "Zettabox"
+          },
+          {
+            "src": "/assets/img/portfolio/zettabox/print/recruiting.jpg",
+            "alt": "Zettabox"
+          }
+        ]
+      },
+      {
+        "title": "PSautoart.com",
+        "url": "",
+        "text": "Bespoke PHP MySql CMS | 2010",
+        "img": {
+          "src": "/assets/img/portfolio/logo-paul-stephens-badge.jpg",
+          "alt": "PS Autoart"
+        },
+        "slides": [
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_00_homepage-0.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_00_homepage-1.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_00_homepage-2.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-0.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-1.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-2.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-3.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_01_car-4.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_02_press-0.jpg",
+            "alt": "PS Autoart"
+          },
+          {
+            "src": "/assets/img/portfolio/ps-autoart/PS_autoart_02_press-1.jpg",
+            "alt": "PS Autoart"
+          }
+        ]
+      }
+    ]
+  }
+}
