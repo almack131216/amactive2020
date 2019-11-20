@@ -14,7 +14,7 @@ const contact = () => {
         alex@amactive.net
       </a>
       <hr className="dotted" />
-      <p className="copyright">Copyright &copy; amactive 2019</p>
+      <p className="copyright">Copyright &copy; amactive 2020</p>
       {/* <a id="to-top" href="#top" className="btn btn-dark btn-lg">
         <i className="fa fa-chevron-up fa-fw fa-1x"></i>
       </a> */}

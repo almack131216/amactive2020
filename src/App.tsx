@@ -16,6 +16,7 @@ import SiteData from "./assets/api/data.json";
 class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
+    document.title = this.props.appTitle;
     console.log("[App.js] constructor");
 
     this.state = {
