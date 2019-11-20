@@ -1,4 +1,7 @@
 /* Base.css */
+.App {
+  text-align: center;
+}
 
 .display-none {
   display: none;

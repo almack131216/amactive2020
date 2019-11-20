@@ -15,7 +15,15 @@
   "imgBanner": {
     "id": "imgBanner",
     "title": "\"My best design is my next\"",
-    "subtitle": "Sergio Pininfarina"
+    "subtitle": "Sergio Pininfarina",
+    "backgroundImage": "./assets/img/pininfarina.jpg",
+    "background": {
+      "url": "./assets/img/pininfarina.jpg",
+      "position": "left top",
+      "color": "#333",
+      "attachment": "scroll",
+      "repeat": "no-repeat"
+    }
   },
   "clients": {
     "id": "clients",

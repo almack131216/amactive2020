@@ -1,6 +1,4 @@
 import * as React from "react";
-import "./App.css";
-// import "./assets/css/main.css";
 import "./assets/css/Base.css";
 import "./assets/css/Colors.css";
 import "./assets/css/Typography.css";
@@ -51,6 +49,7 @@ class App extends React.Component<any, any> {
           id={this.state.data.imgBanner.id}
           title={this.state.data.imgBanner.title}
           subtitle={this.state.data.imgBanner.subtitle}
+          background={this.state.data.imgBanner.background}
         />
         <TitleSection title={this.state.data.portfolio.title} />
         <Portfolio data={this.state.data.portfolio} />
