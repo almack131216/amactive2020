@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./Portfolio.css";
 import ImgGallery from "./ReactGestureGallery";
 
 class portfolio extends React.Component<any, any> {

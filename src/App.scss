@@ -1,0 +1,29 @@
+/* App.scss */
+@import "./assets/scss/Colors";
+@import "./assets/scss/Base";
+@import "./assets/scss/Typography.scss";
+@import "./components/Backdrop/Backdrop";
+@import "./components/TitleSection/TitleSection";
+@import "./components/MainImage/MainImage";
+@import "./components/ImgBanner/ImgBanner";
+@import "./components/Services/Services";
+@import "./components/Portfolio/Portfolio";
+@import "./components/Clients/Clients";
+@import "./components/Contact/Contact";
+@import "./components/Toolbar/Toolbar";
+@import "./components/SideDrawer/SideDrawer";
+@import "./components/SideDrawer/DrawerToggleButton";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

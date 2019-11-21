@@ -1,8 +1,5 @@
 import * as React from "react";
-import "./assets/css/Base.css";
-import "./assets/css/Colors.css";
-import "./assets/css/Typography.css";
-// import Navigation from "./components/Navigation/Navigation";
+import "./App.scss";
 import MainImage from "./components/MainImage/MainImage";
 import Services from "./components/Services/Services";
 import ImgBanner from "./components/ImgBanner/ImgBanner";
@@ -10,7 +7,6 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import TitleSection from "./components/TitleSection/TitleSection";
 import Clients from "./components/Clients/Clients";
 import Contact from "./components/Contact/Contact";
-// import Footer from "./components/Footer/Footer";
 import SiteData from "./assets/api/data.json";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
@@ -86,7 +82,6 @@ class App extends React.Component<any, any> {
           <Clients data={this.state.data.clients} />
         </main>
         <Contact />
-        {/* <Footer /> */}
       </div>
     );
   }

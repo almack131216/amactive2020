@@ -1,6 +1,5 @@
 import * as React from "react";
 import parse from "html-react-parser";
-import "./TitleSection.css";
 
 class titleSection extends React.Component<any, any> {
   constructor(props: any) {

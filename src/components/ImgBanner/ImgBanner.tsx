@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./ImgBanner.css";
 
 class imgBanner extends React.Component<any, any> {
   render() {

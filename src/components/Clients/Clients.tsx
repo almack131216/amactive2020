@@ -1,6 +1,5 @@
 import * as React from "react";
 import ImgLoading from "../../assets/loading.gif";
-import "./Clients.css";
 
 class clients extends React.Component<any, any> {
   render() {

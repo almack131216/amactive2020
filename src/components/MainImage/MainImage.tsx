@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./MainImage.css";
 
 class mainImage extends React.Component<any, any> {
   render() {
