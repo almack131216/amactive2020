@@ -26,7 +26,9 @@ class portfolio extends React.Component<any, any> {
         );
 
         const itemImg = item.url ? (
-          itemImgElement
+          <a href={item.url} target="_blank" title="Open link in new window">
+            {itemImgElement}
+          </a>
         ) : (
           <ImgGallery
             images={item.slides}
@@ -38,25 +40,6 @@ class portfolio extends React.Component<any, any> {
         return (
           <div className={itemClass} key={index}>
             {itemImg}
-            {/* <ul className="img-text-behind effect">
-              <li className="li-text">
-                <h2 className="zero">{item.title}</h2>
-                <p className="zero">[{item.text}]</p>
-              </li>
-              <li className="li-img">
-                <a
-                  href={item.url}
-                  target="_blank"
-                  title="Open this website in new window"
-                >
-                  <img
-                    className="top img-responsive"
-                    src={item.img.src}
-                    alt={item.img.alt}
-                  />
-                </a>
-              </li>
-            </ul> */}
           </div>
         );
       }

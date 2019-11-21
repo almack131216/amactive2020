@@ -40,6 +40,14 @@ section {
     padding-top: calc(#{$offset-g2} * 2);
   }
 
+  @media (max-width: 479px) {
+    padding: $offset-g1;
+
+    &.title:not(#about) {
+      padding-top: $offset-g2;
+    }
+  }
+
   > .section-inner {
     display: inline-block;
     max-width: $max-width;
