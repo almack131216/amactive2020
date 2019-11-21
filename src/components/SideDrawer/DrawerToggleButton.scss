@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   height: 24px;
-  width: 30px;
+  width: $offset-g2;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -16,7 +16,7 @@
 }
 
 .toggle-button__line {
-  width: 30px;
+  width: $offset-g2;
   height: 2px;
   background: white;
 }

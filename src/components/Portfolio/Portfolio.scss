@@ -8,7 +8,7 @@
   float: left;
   background-color: #0091cf;
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: $offset-g2;
 }
 
 .img-text-behind:before {
@@ -27,13 +27,13 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 15px;
+  padding: $offset-g1;
 }
 
 .img-text-behind p,
 .img-text-behind h2 {
   color: #fff;
-  padding: 10px;
+  padding: $offset-1;
 }
 
 .img-text-behind p {
@@ -65,61 +65,62 @@
 /*
 https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
 */
-.css-grid.portfolio {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 10vw);
-  grid-gap: 15px;
-  margin: 0 auto;
-}
 
-.css-grid.portfolio .css-grid__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid #eee;
+.css-grid {
+  &.portfolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 10vw);
+    grid-gap: $offset-g1;
+    margin: 0 auto;
+
+    @media (min-width: 600px) and (max-width: 767px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 20vw);
+    }
+
+    @media (max-width: 599px) {
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: repeat(3, 30vw);
+    }
+
+    .css-grid__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid $color_border;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-  .css-grid.portfolio .css-grid__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
-  }
-
-  .css-grid.portfolio .css-grid__item--4 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 4;
-  }
-
-  .css-grid.portfolio .css-grid__item--5 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-
-  .css-grid.portfolio .css-grid__item--6 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
   .css-grid.portfolio {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 20vw);
-  }
-}
+    .css-grid__item--1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
 
-@media (max-width: 599px) {
-  .css-grid.portfolio {
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 30vw);
+    .css-grid__item--4 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .css-grid__item--5 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+
+    .css-grid__item--6 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
   }
 }

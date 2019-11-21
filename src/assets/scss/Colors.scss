@@ -1,47 +1,44 @@
 /* Colors.css */
 
 .bg-primary {
-  background-color: #c0392b;
+  background-color: $color_primary;
+
+  h2,
+  h3,
+  h4,
+  p {
+    color: white;
+  }
 }
 
 .bg-secondary {
-  background-color: #ffaf00;
+  background-color: $color_secondary;
+  color: black;
 }
 
 .bg-third {
-  background-color: #0091cf;
+  background-color: $color_three;
+
+  p,
+  ul li {
+    color: black;
+  }
 }
 
 .bg-fourth {
-  background-color: #01395a;
-}
+  background-color: $color_four;
 
-.bg-primary h2,
-.bg-primary h3,
-.bg-primary h4,
-.bg-primary p,
-.bg-fourth h2,
-.bg-fourth h3,
-.bg-fourth h4,
-.bg-fourth p {
-  color: white;
-}
-
-.bg-fourth a {
-  color: white;
+  h2,
+  h3,
+  h4,
+  p,
+  a {
+    color: white;
+  }
 }
 
 .bg-white {
   background-color: white;
-}
-
-.bg-secondary p,
-.bg-secondary ul li,
-.bg-secondary ul li,
-.bg-third p,
-.bg-third ul li,
-.bg-third ul li {
-  color: black;
 }
 
 .bg-primary,
@@ -50,10 +47,6 @@
   color: white;
 }
 
-.bg-third {
-  background-color: #0091cf;
-}
-
 .text-primary {
-  color: #c0392b;
+  color: $color_primary;
 }

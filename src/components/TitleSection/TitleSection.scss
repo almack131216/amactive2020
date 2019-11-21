@@ -7,7 +7,7 @@ section.title {
 section.title h2 {
   display: inline-block;
   margin: 0 auto;
-  padding-bottom: 15px;
+  padding-bottom: $offset-g1;
   position: relative;
 }
 
@@ -23,13 +23,13 @@ section.title h2:before {
 }
 
 section.title h3 {
-  margin: 30px auto 0 auto;
+  margin: $offset-g2 auto 0 auto;
   display: inline-block;
   position: relative;
 }
 
 section.title div.body {
-  margin-top: 30px;
+  margin-top: $offset-g2;
 }
 
 section.title.bg-secondary .body {
