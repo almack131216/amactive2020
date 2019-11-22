@@ -5,7 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <App appTitle="amactive 2020 | MAKE AMACTIVE GREAT AGAIN" />,
+  <App id="top" appTitle="amactive 2020 | MAKE AMACTIVE GREAT AGAIN" />,
   document.getElementById("root")
 );
 

@@ -1,19 +1,61 @@
 {
   "date": "191116",
   "tmpPath": "./assets/img/",
+  "brandName": "amactive",
   "header": {
     "img": {
       "src": "/assets/img/maga-cap.jpg",
       "alt": "Make Amactive Great Again!"
     }
   },
+  "contact": {
+    "id": "contact",
+    "name": "Alex Mackenzie",
+    "email": "alex@amactive.net"
+  },
   "navigation": [
-    { "id": "top", "title": "Home", "url": "#top" },
-    { "id": "about", "title": "About", "url": "#about" },
-    { "id": "skills", "title": "Skills", "url": "#services" },
-    { "id": "portfolio", "title": "Portfolio", "url": "#portfolio" },
-    { "id": "clients", "title": "Clients", "url": "#clients" },
-    { "id": "contact", "title": "Contact", "url": "#contact" }
+    {
+      "id": "top",
+      "title": "Home",
+      "url": "#top",
+      "navTop": false,
+      "navSide": false
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "url": "#about",
+      "navTop": true,
+      "navSide": true
+    },
+    {
+      "id": "skills",
+      "title": "Skills",
+      "url": "#services",
+      "navTop": true,
+      "navSide": true
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "url": "#portfolio",
+      "navTop": true,
+      "navSide": true
+    },
+    {
+      "id": "clients",
+      "title": "Clients",
+      "url": "#clients",
+      "navTop": true,
+      "navSide": true
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "url": "#contact",
+      "navTop": true,
+      "navSide": true
+    }
   ],
   "about": {
     "id": "about",

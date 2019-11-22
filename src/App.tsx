@@ -6,7 +6,7 @@ import ImgBanner from "./components/ImgBanner/ImgBanner";
 import Portfolio from "./components/Portfolio/Portfolio";
 import TitleSection from "./components/TitleSection/TitleSection";
 import Clients from "./components/Clients/Clients";
-// import Contact from "./components/Contact/Contact";
+import Contact from "./components/Contact/Contact";
 import SiteData from "./assets/api/data.json";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
@@ -51,7 +51,11 @@ class App extends React.Component<any, any> {
     return (
       <div className="App">
         {/* <Navigation /> */}
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <Toolbar
+          brandName={false}
+          navigation={false}
+          drawerClickHandler={this.drawerToggleClickHandler}
+        />
         <SideDrawer
           show={this.state.sideDrawerOpen}
           navigation={this.state.data.navigation}
@@ -89,7 +93,7 @@ class App extends React.Component<any, any> {
           />
           <Clients data={this.state.data.clients} />
         </main>
-        {/* <Contact /> */}
+        <Contact id={this.state.data.contact.id} />
       </div>
     );
   }
