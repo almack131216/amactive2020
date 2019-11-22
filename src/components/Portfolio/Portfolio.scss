@@ -26,6 +26,7 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
       height: 100%;
       object-fit: cover;
       border: 1px solid $color_border;
+      cursor: pointer;
 
       > div {
         width: 100%;

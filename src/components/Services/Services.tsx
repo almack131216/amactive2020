@@ -22,7 +22,7 @@ class services extends React.Component<any, any> {
         return (
           <div className="item" key={index}>
             <div className="icon-area">
-              <span className="fa-stack fa-4x___">
+              <span className="fa-stack">
                 <FontAwesomeIcon icon={faCircle} className="fa-stack-2x" />
                 <FontAwesomeIcon
                   icon={item.icon as IconName}
