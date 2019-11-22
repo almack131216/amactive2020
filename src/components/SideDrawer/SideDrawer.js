@@ -9,7 +9,11 @@ const sideDrawer = props => {
   const navLinks = props.navigation.map((link, index) => {
     return link.navSide ? (
       <li key={index}>
-        <a href={link.url} title="Link to {link.title}">
+        <a
+          onClick={props.clicked}
+          href={link.url}
+          title={"Link to " + link.title}
+        >
           {link.title}
         </a>
       </li>

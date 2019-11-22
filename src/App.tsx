@@ -25,7 +25,7 @@ class App extends React.Component<any, any> {
   }
 
   componentDidMount() {
-    // console.log("[App.js] componentDidMount");
+    console.log("[App.js] componentDidMount");
     //"http://www.amactive.net/amactive2020/data.json"
   }
 
@@ -39,6 +39,11 @@ class App extends React.Component<any, any> {
     this.setState({ sideDrawerOpen: false });
   };
 
+  closeSideDrawerHandler = () => {
+    console.log("[App.tsx] closeSideDrawerHandler");
+    this.backdropClickHandler();
+  };
+
   render() {
     // console.log("[App.js] render... ");
 
@@ -50,7 +55,6 @@ class App extends React.Component<any, any> {
 
     return (
       <div className="App">
-        {/* <Navigation /> */}
         <Toolbar
           brandName={false}
           navigation={false}
@@ -60,6 +64,7 @@ class App extends React.Component<any, any> {
         <SideDrawer
           show={this.state.sideDrawerOpen}
           navigation={this.state.data.navigation}
+          clicked={this.closeSideDrawerHandler}
         />
         {backdrop}
         <main style={{ marginTop: "64px" }}>
