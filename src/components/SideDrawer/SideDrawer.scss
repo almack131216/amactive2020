@@ -8,7 +8,7 @@
   width: 200px;
   max-width: 400px;
   z-index: 101;
-  transform: translateX(-100%);
+  transform: translateX(-210px);
   transition: transform 0.3s ease-out;
 
   &.open {
@@ -41,7 +41,7 @@
   }
 }
 
-// @media (min-width: 769px) {
+// @media (min-width: $bp-sm) {
 //   .side-drawer {
 //     display: none;
 //   }

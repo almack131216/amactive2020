@@ -67,7 +67,7 @@ class App extends React.Component<any, any> {
           clicked={this.closeSideDrawerHandler}
         />
         {backdrop}
-        <main style={{ marginTop: "64px" }}>
+        <main>
           <MainImage data={this.state.data.header} />
           <TitleSection
             id="about"

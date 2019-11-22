@@ -13,12 +13,12 @@
     max-width: $max-width;
     margin: 0 auto;
 
-    @media (min-width: 600px) and (max-width: 1023px) {
+    @media (min-width: $bp-tablet) and (max-width: 1023px) {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 20vw);
     }
 
-    @media (max-width: 599px) {
+    @media (max-width: $bp-tablet-1) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 30vw);
     }
