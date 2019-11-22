@@ -6,16 +6,19 @@ const sideDrawer = props => {
     drawerClasses = "side-drawer open";
   }
 
+  const navLinks = props.navigation.map((link, index) => {
+    return (
+      <li>
+        <a href={link.url} title="Link to {link.title}">
+          {link.title}
+        </a>
+      </li>
+    );
+  });
+
   return (
     <nav className={drawerClasses}>
-      <ul>
-        <li>
-          <a href="/">Products</a>
-        </li>
-        <li>
-          <a href="/">Users</a>
-        </li>
-      </ul>
+      <ul>{navLinks}</ul>
     </nav>
   );
 };

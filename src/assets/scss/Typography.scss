@@ -15,6 +15,13 @@ p {
   color: $color_font-default;
 }
 
+a {
+  color: $color_font-hyperlink;
+  &:hover {
+    color: $color_font-hyperlink-hover;
+  }
+}
+
 h1 {
   font-size: 50px;
   line-height: 60px;

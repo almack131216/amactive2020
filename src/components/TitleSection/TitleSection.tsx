@@ -15,10 +15,12 @@ class titleSection extends React.Component<any, any> {
       ? parse("<h3>" + this.props.bodyStrong + "</h3>")
       : null;
     const myClass = this.props.class ? this.props.class : "";
-    const myId = this.props.id ? this.props.id : "";
 
     return (
-      <section id={myId} className={"title " + myClass}>
+      <section
+        id={this.props.id ? this.props.id : null}
+        className={"title " + myClass}
+      >
         <div className="section-inner">
           <h2>{this.props.title}</h2>
           {mySubtitle}

@@ -7,6 +7,14 @@
       "alt": "Make Amactive Great Again!"
     }
   },
+  "navigation": [
+    { "id": "top", "title": "Home", "url": "#top" },
+    { "id": "about", "title": "About", "url": "#about" },
+    { "id": "skills", "title": "Skills", "url": "#services" },
+    { "id": "portfolio", "title": "Portfolio", "url": "#portfolio" },
+    { "id": "clients", "title": "Clients", "url": "#clients" },
+    { "id": "contact", "title": "Contact", "url": "#contact" }
+  ],
   "about": {
     "id": "about",
     "title": "Hello Wilde",
@@ -117,19 +125,19 @@
         "text": "React, Angular, jQuery, Vanilla JS, AureliaJS, Bootstrap, PHP, MySQL, Wordpress"
       },
       {
+        "title": "Environment",
+        "icon": "terminal",
+        "text": "VS Code, NPM, Netlify, GIT, Bitbucket, JIRA, TFS"
+      },
+      {
         "title": "HTML5 & CSS3",
         "icon": "shapes",
-        "text": "Standards compliant HTML with SASS CSS3"
+        "text": "Standards compliant HTML5 with SASS CSS3"
       },
       {
         "title": "Design",
         "icon": "pencil-alt",
-        "text": "Axure, Adobe Fireworks, Photoshop & Illustrator, Flash"
-      },
-      {
-        "title": "Environment",
-        "icon": "terminal",
-        "text": "VS Code, NPM, Grunt, Gulp, GIT, Bitbucket, JIRA, TFS (Windows)"
+        "text": "Axure, Adobe XD, Photoshop, Fireworks, Illustrator, Flash"
       }
     ]
   },

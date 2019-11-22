@@ -6,7 +6,7 @@ import ImgBanner from "./components/ImgBanner/ImgBanner";
 import Portfolio from "./components/Portfolio/Portfolio";
 import TitleSection from "./components/TitleSection/TitleSection";
 import Clients from "./components/Clients/Clients";
-import Contact from "./components/Contact/Contact";
+// import Contact from "./components/Contact/Contact";
 import SiteData from "./assets/api/data.json";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
@@ -52,7 +52,10 @@ class App extends React.Component<any, any> {
       <div className="App">
         {/* <Navigation /> */}
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
+        <SideDrawer
+          show={this.state.sideDrawerOpen}
+          navigation={this.state.data.navigation}
+        />
         {backdrop}
         <main style={{ marginTop: "64px" }}>
           <MainImage data={this.state.data.header} />
@@ -62,6 +65,7 @@ class App extends React.Component<any, any> {
             body={this.state.data.about.body}
           />
           <TitleSection
+            id={this.state.data.services.id}
             title={this.state.data.services.title}
             class="bg-primary"
           />
@@ -72,16 +76,20 @@ class App extends React.Component<any, any> {
             subtitle={this.state.data.imgBanner.subtitle}
             background={this.state.data.imgBanner.background}
           />
-          <TitleSection title={this.state.data.portfolio.title} />
+          <TitleSection
+            id={this.state.data.portfolio.id}
+            title={this.state.data.portfolio.title}
+          />
           <Portfolio data={this.state.data.portfolio} />
           <TitleSection
+            id={this.state.data.clients.id}
             title={this.state.data.clients.title}
             body={this.state.data.clients.body}
             class="bg-secondary"
           />
           <Clients data={this.state.data.clients} />
         </main>
-        <Contact />
+        {/* <Contact /> */}
       </div>
     );
   }
