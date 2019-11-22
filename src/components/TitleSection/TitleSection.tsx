@@ -2,11 +2,6 @@ import * as React from "react";
 import parse from "html-react-parser";
 
 class titleSection extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-    console.log("[TitleSection.js] constructor props: ", props);
-  }
-
   render() {
     const myBody = this.props.body
       ? parse('<div class="body">' + this.props.body + "</div")

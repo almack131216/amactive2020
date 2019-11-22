@@ -6,7 +6,7 @@ import "react-image-lightbox/style.css"; // This only needs to be imported once 
 class LightboxExample extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    console.log("[ReactGestureGallery] props: ", props);
+    // console.log("[ReactGestureGallery] props: ", props);
 
     this.state = {
       photoIndex: 0,
@@ -24,7 +24,7 @@ class LightboxExample extends React.Component<any, any> {
     //   "//placekitten.com/1500/1500"
     // ];
 
-    console.log("src: " + this.props.images[0].src);
+    // console.log("src: " + this.props.images[0].src);
 
     // const images = [
     //   this.props.images[0].img.src,
@@ -34,7 +34,7 @@ class LightboxExample extends React.Component<any, any> {
 
     const images = this.props.images.map(
       (image: { src: string }, index: number) => {
-        console.log("[ReactGestureGallery] img: " + image.src);
+        // console.log("[ReactGestureGallery] img: " + image.src);
         return image.src;
       }
     );

@@ -59,8 +59,8 @@
   ],
   "about": {
     "id": "about",
-    "title": "Hello Wilde",
-    "body": "I'm a UI-UX designer-developer with more than 10 years experience. My broad experience will be useful to any employer, so <a href=\"#contact\">get in touch</a> if you have an empty chair, and a bad-ass-fast desktop machine to work from."
+    "title": "Hello World",
+    "body": "My name is Alex. I am a designer-developer with more than 10 years experience. I specialise in front end development using React, Sass CSS, HTML5. If you need <a href=\"#services\">my&nbsp;skills</a> to boost your output then do please <a href=\"#contact\">contact&nbsp;me</a>."
   },
   "imgBanner": {
     "id": "imgBanner",

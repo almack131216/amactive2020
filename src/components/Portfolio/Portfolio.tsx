@@ -26,7 +26,12 @@ class portfolio extends React.Component<any, any> {
         );
 
         const itemImg = item.url ? (
-          <a href={item.url} target="_blank" title="Open link in new window">
+          <a
+            href={item.url}
+            target="_blank"
+            title="Open link in new window"
+            rel="noopener noreferrer"
+          >
             {itemImgElement}
           </a>
         ) : (

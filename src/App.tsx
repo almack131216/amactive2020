@@ -16,7 +16,7 @@ class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     document.title = this.props.appTitle;
-    console.log("[App.js] constructor");
+    // console.log("[App.js] constructor");
 
     this.state = {
       data: SiteData,
@@ -25,7 +25,7 @@ class App extends React.Component<any, any> {
   }
 
   componentDidMount() {
-    console.log("[App.js] componentDidMount");
+    // console.log("[App.js] componentDidMount");
     //"http://www.amactive.net/amactive2020/data.json"
   }
 
@@ -40,7 +40,7 @@ class App extends React.Component<any, any> {
   };
 
   render() {
-    console.log("[App.js] render... ");
+    // console.log("[App.js] render... ");
 
     let backdrop;
 
