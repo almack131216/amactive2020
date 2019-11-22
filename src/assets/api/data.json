@@ -11,7 +11,8 @@
   "contact": {
     "id": "contact",
     "name": "Alex Mackenzie",
-    "email": "alex@amactive.net"
+    "email": "alex(at)amactive.net",
+    "copyright": "Copyright &copy; amactive 2020"
   },
   "navigation": [
     {

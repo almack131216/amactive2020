@@ -94,7 +94,10 @@ class App extends React.Component<any, any> {
           />
           <Clients data={this.state.data.clients} />
         </main>
-        <Contact id={this.state.data.contact.id} />
+        <Contact
+          id={this.state.data.contact.id}
+          data={this.state.data.contact}
+        />
       </div>
     );
   }
