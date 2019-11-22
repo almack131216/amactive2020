@@ -2,17 +2,16 @@ import React from "react";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 
 const toolbar = props => {
-  let drawerClasses = "side-drawer";
-  if (props.show) {
-    drawerClasses = "side-drawer open";
-  }
-
-  const classes = [];
+  let classes = [];
   classes.push("toolbar");
   if (props.navigation) {
     classes.push("has-toolbar");
   } else {
     classes.push("no-toolbar");
+  }
+
+  if (props.sideDrawerOpen) {
+    classes.push("side-drawer-open");
   }
 
   const navLinks = props.navigation

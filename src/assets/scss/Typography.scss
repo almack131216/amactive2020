@@ -20,6 +20,9 @@ a {
   &:hover {
     color: $color_font-hyperlink-hover;
   }
+  &:active {
+    color: #ff9900;
+  }
 }
 
 h1 {

@@ -55,6 +55,7 @@ class App extends React.Component<any, any> {
           brandName={false}
           navigation={false}
           drawerClickHandler={this.drawerToggleClickHandler}
+          sideDrawerOpen={this.state.sideDrawerOpen}
         />
         <SideDrawer
           show={this.state.sideDrawerOpen}

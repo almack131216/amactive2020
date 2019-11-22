@@ -33,12 +33,9 @@
         // font-size: 1.2rem;
         text-align: left;
         display: block;
-        padding: $offset-1 $offset-2;
-
-        &:hover,
-        &:active {
-          color: #ff9900;
-        }
+        padding: $offset-1 $offset-g1;
+        // color: black;
+        font-weight: bold;
       }
     }
   }
