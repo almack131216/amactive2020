@@ -165,7 +165,7 @@
       {
         "title": "Development",
         "icon": "code",
-        "text": "React, Angular, jQuery, Vanilla JS, AureliaJS, Bootstrap, PHP, MySQL, Wordpress"
+        "text": "React, Redux, Angular, jQuery, Vanilla JS, AureliaJS, PHP, MySQL, Wordpress"
       },
       {
         "title": "Environment",
@@ -175,7 +175,7 @@
       {
         "title": "HTML5 & CSS3",
         "icon": "shapes",
-        "text": "Standards compliant HTML5 with SASS CSS3"
+        "text": "Standards compliant HTML5, SASS CSS3, Bootstrap"
       },
       {
         "title": "Design",
