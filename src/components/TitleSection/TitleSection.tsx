@@ -17,7 +17,7 @@ class titleSection extends React.Component<any, any> {
         className={"title " + myClass}
       >
         <div className="section-inner">
-          <h2>{this.props.title}</h2>
+          <h2>{parse(this.props.title)}</h2>
           {mySubtitle}
           {myBody}
         </div>

@@ -60,8 +60,8 @@
   ],
   "about": {
     "id": "about",
-    "title": "Hello World",
-    "body": "My name is Alex. I am a designer-developer with more than 10 years experience. I specialise in front end development using React, Sass CSS, HTML5. If you need <a href=\"#services\">my&nbsp;skills</a> to boost your output then do please <a href=\"#contact\">contact&nbsp;me</a>."
+    "title": "Hello <span class=\"line-through\">World</span> Employer",
+    "body": "My name is Alex. I am a designer-developer with more than 10 years experience. I specialise in front end development using React, Sass CSS, and HTML. If you need <a href=\"#services\">my&nbsp;skills</a> to boost your output then do please <a href=\"#contact\">contact&nbsp;me</a>."
   },
   "imgBanner": {
     "id": "imgBanner",
@@ -81,7 +81,7 @@
     "id": "clients",
     "class": "bg-secondary",
     "title": "Clients",
-    "body": "Throughout my career, I have been very fortunate to work on some exciting projects for clients large and small, all over the world",
+    "body": "Throughout my career, I have been very fortunate to work on some exciting projects for clients large and small, all over the world.",
     "items": [
       {
         "title": "BP | British Peroleum",
@@ -170,17 +170,17 @@
       {
         "title": "Environment",
         "icon": "terminal",
-        "text": "VS Code, NPM, Netlify, GIT, Bitbucket, JIRA, TFS"
+        "text": "Windows, VS Code, NPM, Netlify, GIT, Bitbucket, JIRA, TFS"
       },
       {
         "title": "HTML5 & CSS3",
         "icon": "shapes",
-        "text": "Standards compliant HTML5, SASS CSS3, Bootstrap"
+        "text": "Standards compliant HTML5, SASS CSS3, Material UI, Bootstrap"
       },
       {
         "title": "Design",
         "icon": "pencil-alt",
-        "text": "Axure, Adobe XD, Photoshop, Fireworks, Illustrator, Flash"
+        "text": "Axure, Adobe XD, Photoshop, Fireworks, Illustrator, Flash, Premiere Rush"
       }
     ]
   },
@@ -189,6 +189,16 @@
     "class": "",
     "title": "Portfolio",
     "items": [
+      {
+        "title": "ClassicAndSportscar.ltd.uk",
+        "url": "https://classicandsportscar.ltd.uk/",
+        "urlNext": "https://csc2020.netlify.com/",
+        "text": "React JS + SASS | May 20",
+        "img": {
+          "src": "/assets/img/portfolio/classic-and-sportscar.jpg",
+          "alt": "Classic and Sportscar Centre"
+        }
+      },
       {
         "title": "EnergieDirect.nl",
         "url": "https://www.energiedirect.nl/",
@@ -199,30 +209,21 @@
         }
       },
       {
-        "title": "ClassicAndSportscar.ltd.uk",
-        "url": "https://classicandsportscar.ltd.uk/_wp190503/",
-        "text": "Wordpress, bespoke theme | Dec 19",
+        "title": "RyedaleMencap.com",
+        "url": "https://www.ryedalemencap.com/",
+        "text": "Wordpress | 2018",
         "img": {
-          "src": "/assets/img/portfolio/classic-and-sportscar.jpg",
-          "alt": "Classic and Sportscar Centre"
+          "src": "/assets/img/portfolio/ryedale-mencap.jpg",
+          "alt": "Ryedale Mencap"
         }
       },
       {
-        "title": "MaltonCoachworks.co.uk",
-        "url": "http://www.maltoncoachworks.co.uk",
-        "text": "Angular FE + Bespoke PHP MySql CMS | 2017",
+        "title": "EnglishCollege.cz",
+        "url": "https://www.englishcollege.cz/",
+        "text": "Wordpress, bespoke theme | 2017",
         "img": {
-          "src": "/assets/img/portfolio/malton-coachworks.jpg",
-          "alt": "Malton Coachworks"
-        }
-      },
-      {
-        "title": "BestFoodPrague.com",
-        "url": "http://www.bestfoodprague.com",
-        "text": "Bespoke PHP MySql CMS | 2016",
-        "img": {
-          "src": "/assets/img/portfolio/best-food-prague.jpg",
-          "alt": "Best Food Prague"
+          "src": "/assets/img/portfolio/english-college-prague.jpg",
+          "alt": "Engish College Prague"
         }
       },
       {

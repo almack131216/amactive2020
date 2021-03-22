@@ -25,7 +25,7 @@ class App extends React.Component<any, any> {
   }
 
   componentDidMount() {
-    console.log("[App.js] componentDidMount");
+    // console.log("[App.js] componentDidMount");
     //"http://www.amactive.net/amactive2020/data.json"
   }
 
@@ -79,7 +79,7 @@ class App extends React.Component<any, any> {
             title={this.state.data.services.title}
             class="bg-primary"
           />
-          <Services data={this.state.data.services} />
+          <Services id="services-list" data={this.state.data.services} />
           <ImgBanner
             id={this.state.data.imgBanner.id}
             title={this.state.data.imgBanner.title}

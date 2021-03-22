@@ -33,6 +33,25 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
         height: 100%;
       }
     }
+
+    .css-grid__item {
+      position: relative;
+
+      .spec-note {
+        width: auto;
+        background: black;
+        background: rgba(0, 0, 0, 0.7);
+        // background: #c0392b;
+        color: white;
+        text-align: left;
+        font-size: 10px;
+        line-height: 14px;
+        padding: 3px 5px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+      }
+    }
   }
 }
 

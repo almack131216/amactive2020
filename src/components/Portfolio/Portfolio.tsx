@@ -29,7 +29,7 @@ class portfolio extends React.Component<any, any> {
           <a
             href={item.url}
             target="_blank"
-            title="Open link in new window"
+            title={item.text}
             rel="noopener noreferrer"
           >
             {itemImgElement}
@@ -45,6 +45,7 @@ class portfolio extends React.Component<any, any> {
         return (
           <div className={itemClass} key={index}>
             {itemImg}
+            <span className="spec-note">{item.text}</span>
           </div>
         );
       }

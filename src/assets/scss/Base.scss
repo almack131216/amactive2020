@@ -32,29 +32,6 @@ code {
   display: inline-block;
 }
 
-/* <section> */
-section {
-  padding: $offset-g2;
-
-  &.title:not(#about) {
-    padding-top: calc(#{$offset-g2} * 2);
-  }
-
-  @media (max-width: $bp-xs-1) {
-    padding: $offset-g1;
-
-    &.title:not(#about) {
-      padding-top: $offset-g2;
-    }
-  }
-
-  > .section-inner {
-    display: inline-block;
-    max-width: $max-width;
-    margin: 0 auto;
-  }
-}
-
 /* offsets */
 .pad-icon-left {
   margin-left: $offset-1;

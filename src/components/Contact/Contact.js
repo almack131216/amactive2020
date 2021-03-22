@@ -9,8 +9,9 @@ const contact = props => {
     <footer id={props.id ? props.id : null} className="bg-fourth">
       <TitleSection title="Contact" class="bg-fourth" />
       <h4>{props.data.name}</h4>
-      <FontAwesomeIcon icon={faEnvelope} />
-      <a href="mailto:alex@amactive.net">{props.data.email}</a>
+      
+      {/* <a href="mailto:alex@amactive.net">{props.data.email}</a> */}
+      <p><FontAwesomeIcon icon={faEnvelope} />{props.data.email}</p>
       {/* // <p className="email">
       //   <FontAwesomeIcon icon={faEnvelope} />
       //   {props.data.email}
